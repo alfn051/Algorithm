@@ -1,5 +1,4 @@
 import java.util.LinkedList;
-
 class Solution {
     public int solution(int bridge_length, int weight, int[] truck_weights) {
         LinkedList<Integer> bridge = new LinkedList<>();
@@ -11,7 +10,6 @@ class Solution {
             trucks.offer(i);
         }
         int answer = 0;
-
         while (!trucks.isEmpty()) {
             bridge.poll();
             answer++;
@@ -25,7 +23,6 @@ class Solution {
             bridge.poll();
             answer++;
         }
-
         return answer;
     }
 }
