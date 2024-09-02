@@ -7,8 +7,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int cnt = 0;
-        int[] a = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        for (int i = Integer.min(a[0], a[1])+1; i < Integer.max(a[0], a[1]); i++) {
+        long[] a = Arrays.stream(br.readLine().split(" ")).mapToLong(Long::parseLong).toArray();
+        for (long i = Long.min(a[0], a[1])+1; i < Long.max(a[0], a[1]); i++) {
             cnt++;
             sb.append(i).append(" ");
         }
