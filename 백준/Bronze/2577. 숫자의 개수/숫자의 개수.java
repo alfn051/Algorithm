@@ -7,6 +7,6 @@ public class Main {
         int[] a=new int[10];
         String s=String.valueOf(Integer.parseInt(br.readLine())*Integer.parseInt(br.readLine())*Integer.parseInt(br.readLine()));
         for(int i=0;i<s.length();i++)a[s.charAt(i)-'0']++;
-        for(int i:a)System.out.print(i+" ");
+        for(int i:a)System.out.println(i);
     }
 }
