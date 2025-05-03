@@ -22,9 +22,8 @@ class Solution {
             String[] ea = book[1].split(":");
             int st = Integer.parseInt(sa[0])*60 + Integer.parseInt(sa[1]);
             int et = Integer.parseInt(ea[0])*60 + Integer.parseInt(ea[1]);
-            int size = room.size();
             boolean state = false;
-            for(int i = 0; i < size; i++){
+            for(int i = 0; i < room.size(); i++){
                 if(st >= room.get(i)){
                     room.set(i, et+10);
                     state = true;
